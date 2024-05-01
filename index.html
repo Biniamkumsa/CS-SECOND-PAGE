@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>B</span>iniam</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="https://biniamkumsa.github.io/CS-HOME-PAGE/" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#services" data-after="services">Skills</a></li>
+            <li><a href="#FAQs" data-after="FAQs">FAQs</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Biniam <span></span></h1>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="about-me pic.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <span class="text first-text">I'm</span>
+        <span class="text sec-text"></span>
+        <p>My name's Biniam Kumsa, a 17-year-old student currently studying in SOS-HGIC DP1. I am from Ethiopia and aspire to pursue computer science in university. Outside of academics, I enjoy swimming and playing chess to pass the time. I hope you find this website enjoyable; I've included additional information at the bottom, so be sure to explore everything. Thank you for visiting, and I hope you have a great experience!</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Biniam";
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "Biniam";
+    }, 8000); //1s = 1000 milliseconds
+}
+
+textLoad();
+setInterval(textLoad, 12000);
+  </script>
+
+<section id="services">
+  <div class="services container">
+    <div class="service-top">
+      <h1 class="section-title"><span>s</span>kills</h1>
+      <!-- <p>....</p> -->
+    </div>
+    <div class="service-bottom">
+      <div class="service-item">
+        <i class="fa-solid fa-person-swimming"></i>
+        <!-- <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div> -->
+        <h2>Swimming</h2>
+        <p>Swimming is one of my favourite sports and actually a one sport i am good at. i started swimming in this school. and i am now one of the good once in My school</p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-chess"></i>
+        <!-- <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div> -->
+        <h2>Chess</h2>
+        <p>Chess is the most interesting and actually hardest board game i have ever played. i have been playing it since i was like 14. and i am now quite good at it and i really enjoy playing it.</p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-code"></i>
+        <!-- <div class="icon"><img src="https://icons8.com/icon/12580/email.png" /></div> -->
+        <h2>Coding</h2>
+        <p>Coding was one of the most facinating thing i have learnt over the past years and i am trying to get used to it and i wouldn't say i am good but i have seen improvements</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ STARTS -->
+<section id="FAQs">
+  <div class="accordion">
+    <div class="image-box">
+      <img src="Question - Made with PosterMyWall.jpg"Accordion Image">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">When did you start coding?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>I started coding in MYP 4 second sem after seeing someone coding</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">One thing interesting about you?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p></p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">what do you like to do in your free time</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>watch series for the whole day </p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Favourite series? </span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>"THE VAMPIRE DIARIES"</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>  
+</section>
+<script>
+  let li = document.querySelectorAll(".faq-text li");
+  for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", (e)=>{
+      let clickedLi;
+      if(e.target.classList.contains("question-arrow")){
+        clickedLi = e.target.parentElement;
+      }else{
+        clickedLi = e.target.parentElement.parentElement;
+      }
+     clickedLi.classList.toggle("showAnswer");
+    });
+  }
+</script>
+
+<!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+        <br>
+        <br>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>...</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>delessa_b@soshgic.edu.gh</h2>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>SOS HGIC GH</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+ <!-- Footer -->
+ <section id="footer">
+  <div class="footer container">
+    <div class="brand">
+      <h1><span>B</span>iniam</h1>
+    </div>
+    <h2>Thank you for visiting my Website</h2>
+    <div class="social-icon">
+      <div class="social-item">
+        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+      </div>
+      <div class="social-item">
+        <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+      </div>
+    </div>
+    <p>Copyright © 2024 Biniam. All rights reserved</p>
+  </div>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>
